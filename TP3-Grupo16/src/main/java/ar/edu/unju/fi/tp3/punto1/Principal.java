@@ -1,5 +1,6 @@
 package ar.edu.unju.fi.tp3.punto1;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Principal {
@@ -9,7 +10,7 @@ public class Principal {
 		System.out.println("Ingrese 5 numeros");
 		int[] v1 = new int[5];
 		int[] v2 = new int[5];
-
+		try {
 		for (int i = 0; i < v1.length; i++) {
 			System.out.print("Ingrese un numero:");
 			int num1 = entrada.nextInt();
@@ -31,6 +32,9 @@ public class Principal {
 				
 			}
 			System.out.println("");
+		}
+		}catch (InputMismatchException e) {
+			System.out.println("Ocurrio un error del tipo " + e.getMessage() + ", ingreso un dato invalido.");
 		}
 		
 	}
