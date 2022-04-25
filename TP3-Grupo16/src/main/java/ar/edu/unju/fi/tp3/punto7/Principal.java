@@ -13,7 +13,7 @@ public class Principal {
 		boolean right;
 		String fruta;
 		/*
-		 * Ingreso frutas a la lista hasta que se indique lo contrario
+		 * Ingreso frutas a la lista, hasta que se indique lo contrario
 		 */
 		do {
 			right = false;
