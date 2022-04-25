@@ -81,7 +81,6 @@ public class Principal {
 		for(String st : lista) {
 			System.out.println("-" + st);
 		}
-		
 		scan.close();
 	}
 }
